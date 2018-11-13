@@ -1,0 +1,49 @@
+div.logs {
+	margin: 16px;
+	background-color: #efefef;
+	padding: 5px;
+	border-radius: 6px;
+	word-wrap: break-word;
+}
+
+div.read-more {
+	float: right;
+	border: 1px solid #8a8a8a;
+	border-radius: 8px;
+	font-size: 10px;
+	text-decoration: none;
+	padding: 2px;
+	background-color: #f3f3f3;
+	color: #060606;
+	clear: both;
+}
+
+div.read-more:hover {
+	cursor: pointer;
+	border: 1px solid #bbb;
+}
+
+h3 {
+	margin-left: 16px;
+}
+
+.date {
+	display: inline-block;
+}
+
+.err_entry > .date {
+	color: red;
+}
+
+.other_entry, .err_entry {
+	max-height: 300px;
+	overflow-y: auto;
+}
+
+.other_entry > .date {
+	color: #4343ff;
+}
+
+.hidden, .to_hide {
+	display: none;
+}

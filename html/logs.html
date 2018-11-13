@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Ultron's logs</title>
+		<link rel="stylesheet" href="https://code.cdn.mozilla.net/fonts/fira.css">
+		<link rel="stylesheet" href="/css/common.css">
+		<link rel="stylesheet" href="/css/logs.css">
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<script src="/html/logs.js"></script>
+		<img src="/spinner.gif" style="display:none;">
+		<header>
+			<a href="/queue" class="help_link error_link">Go back to queues</a>
+			Ultron's logs
+			<a href="/help" class="help_link">See help</a>
+		</header>
+		<h3>Seeing&nbsp;
+			<select onchange="select_changed(event);">
+				<option value="all">All</option>
+				<option value="errors">Errors</option>
+				<option value="others">Others</option>
+			</select>&nbsp;logs</h3>
+		<div class="logs">
+			[[logs]]
+		</div>
+	</body>
+</html>

@@ -1,0 +1,38 @@
+* {
+	font-family: 'Fira Sans';
+	margin: 0;
+}
+
+a.help_link {
+	position: absolute;
+	top: 8px;
+	right: 6px;
+	border: 1px solid #5b5bd2;
+	border-radius: 8px;
+	font-size: 15px;
+	text-decoration: none;
+	padding: 3px;
+	background-color: #5b5bd2;
+	color: #eee;
+}
+
+a.help_link:hover {
+	cursor: pointer;
+	border: 1px solid #3b3bc2;
+	background-color: #3b3bc2;
+}
+
+a.error_link {
+	left: 6px;
+	right: initial;
+}
+
+header {
+	text-align: center;
+	height: 45px;
+	width: 100%;
+	background-color: #333;
+	font-size: 30px;
+	color: #eee;
+	margin-bottom: 17px;
+}

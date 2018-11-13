@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Build queue</title>
+		<link rel="stylesheet" href="https://code.cdn.mozilla.net/fonts/fira.css">
+		<link rel="stylesheet" href="/css/common.css">
+		<link rel="stylesheet" href="/css/queue.css">
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<header>
+			<a href="/logs" class="help_link error_link">See Ultron's logs</a>
+			Welcome to the queue!
+			<a href="/help" class="help_link">See help</a>
+		</header>
+		<h3>Seeing queue of&nbsp;<select id="repos" onchange="select_changed(event)">[[repositories]]</select></h3>
+		<table class='queue'>
+			<thead>
+				<th class="reference">Reference</th>
+				<th class="priority">Priority</th>
+				<th class="target">Target branch</th>
+				<th class="title">Title</th>
+				<th class="env">Env. args</th>
+				<th class="after">After</th>
+				<th class="status">Status</th>
+			</thead>
+			<tbody>
+				[[content]]
+			</tbody>
+		</table>
+		<div id="popup">
+			<span id="mover"></span>
+			<div class="inner">
+				<div id="popup_header">Title</div>
+				<div id="popup_content"></div>
+				<div class="footer">
+					<button class="close_button" onclick="close_popup()">Close</button>
+				</div>
+			</div>
+		</div>
+		<script src="/html/queue.js"></script>
+	</body>
+</html>

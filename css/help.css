@@ -1,0 +1,38 @@
+div.content {
+	margin: 3px auto 3px auto;
+	width: 95%;
+	max-width: 900px;
+	text-align: justify;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin-bottom: 10px;
+}
+
+code {
+	font-family: Lucida Console, Monaco, monospace;
+	color: #ececec;
+	background-color: #002b36;
+	padding: 1px;
+	border-radius: 4px;
+}
+
+.highlight {
+	margin-bottom: 6px;
+}
+
+.highlight > code {
+	width: 100%;
+	display: block;
+	text-align: initial;
+	padding: 4px;
+}
+
+ul {
+	margin-top: 10px;
+	margin-bottom: 16px;
+}
+
+p {
+	margin-bottom: 8px;
+}
